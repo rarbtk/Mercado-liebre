@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
 
 
 app.get('/register', function(req, res) {
-    let file = path.resolve("MercadoLiebre.html");
+    let file = path.resolve("registro.html");
   
     res.sendFile(file);
 });
