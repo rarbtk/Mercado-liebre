@@ -9,6 +9,11 @@ app.get('/', function(req, res) {
 });
 
 
+app.get('/register', function(req, res) {
+    let file = path.resolve("MercadoLiebre.html");
+  
+    res.sendFile(file);
+});
 
 app.get("*", function(req,res){
     if(req.url.includes(".")){
