@@ -25,6 +25,12 @@ app.get("*", function(req,res){
 })
 
 
+app.get('/ingresa', function(req, res) {
+    let file = path.resolve("ingresa.html");
+  
+    res.sendFile(file);
+});
+
 
 app.listen(3000, function() {
   console.log('Aplicación ejemplo, escuchando el puerto 3000!');

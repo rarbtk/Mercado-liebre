@@ -9,61 +9,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
-   <header>
-        <img src="logo-mercado-liebre.svg" alt="" srcset="">
+   
+    <header>
         <div class="box">
+        <img src="logo-mercado-liebre.svg" alt="" srcset="" class="logo">
+        
+            
             <div class="container-1">
-                <span class="icon"><i class="fa fa-search"></i></span>
+                
                 <input type="search" id="search" placeholder="Busca productos" />
+                <span class="icon"><i class="fa fa-search"></i></span>
             </div>
-            <p i class="fab fa-apple-pay">Compra en cuotas y sin tarjeta de credito</p></i>
+          
           </div>
-          <ul>
+          <p i class="fab fa-apple-pay">Compra en cuotas y sin tarjeta de credito</p></i>
+          
+          
+          
+        <nav id="barra">
+            <div>
+            <i class="fas fa-bars hamburguesa" ></i>
+        </div>
+
+         
+           <ul>
             <li><a href="">Ofertas</a></li>
             <li><a href="">tiendas oficiales</a></li>
             <li><a href="">vender</a></li>
             <li><a href="">ayuda</a></li>
      
-        </ul>
-        <ul>
-         <li><a href="">Crea tu cuenta</a><i class="fas fa-address-card"></li></i>
-         <li ><a href="">Ingresa</a><i class="fas fa-door-open"></i></li>
+            </ul>
+            <ul>
+         <li><a href="/registro.html">Crea tu cuenta</a><i class="fas fa-address-card"></li></i>
+         <li ><a href="/ingresa.html">Ingresa</a><i class="fas fa-door-open"></i></li>
          <li><a href="">tus compras</a><i class="fab fa-autoprefixer"></i></li>
-        </ul>
+            </ul>
+        
+        </nav>
     </header>
-    
+    <main>
     <form action="/">
-
+        <div class="registro">
         <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+        </div>
+
+        <div class="registro">
         <input type="text" name="Nombre y Apellido" placeholder="Nombre de usuario">
+        </div>
+        <div class="registro">
         <input type="email" name="Email" placeholder="Email">
+        </div>
         
-        <p><b> Fecha de naciemiento</b></p>
-        <input type="date" name="fecha de naciemiento">
-        <input type="text" name="Domicilio" placeholder="Domicilio">
-
-        <h3>Perfil de usuario</h3>
-        <input type="radio" name="comp" value="comprador">comprador</input>
-        <input type="radio" name="comp" value="vendedor">vendedor</input>
-
-        <h3>intereses</h3>
+        <div class="registro">
+        
+        <p>Fecha de nacimiento</p>
+        <input type="date" name="fecha de naciemiento" >
+        </div>
+        
+    
+    <div class="registro">
+    <input type="text" name="Domicilio" placeholder="Domicilio">
+    </div>    
+        
+        
+        <div class="registro">
+        <p>Perfil de usuario</p>
+        <input type="radio" name="comp" value="comprador">Comprador</input>
+        </div>
+        
+        <div class="registro">
+        <input type="radio" name="comp" value="vendedor">Vendedor</input>
+        </div>
+        
+        
+        <div class="registro">
+        <p>Intereses</p>
         <input type="checkbox" value="Electro" name="Electro">Electro</input>
+        </div>
+        
+        <div class="registro">
         <input type="checkbox" value="Moda" name="Modao">Moda</input>
+        </div>
+
+        <div class="registro">
         <input type="checkbox" value="Hogar" name="Hogar">Hogar</input>
+        </div>
+        <div class="registro">
         <input type="checkbox" value="Jugueteria" name="Jugueteria">Jugueteria</input>
+        </div>
+        
+        <div class="registro">
         <input type="checkbox" value="Vida" name="Vida">Vida sana</input>
-
-        <h3>Elegi tu foto de usuario</h3>
+        </div>
+        
+        <div class="registro">
+        <p>Elegi tu foto de usuario</p>
         <input type="file" name="archivosubido">
-        
+        </div>
 
-        <p></p>
-        <input type="password" name="password" placeholder="Elegi tu contraseña">
-        <input type="password" name="password" placeholder="Confirma tu contraseña">
-        <p></p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
         
+        <div class="registro">
+        <input type="password" name="password" placeholder="Elegi tu contraseña">
+        </div>
+        <div class="registro">
+        <input type="password" name="password" placeholder="Confirma tu contraseña">
+       
+        </div>
+        <div class="registro">
+        <input type="submit" value="Enviar" class="enviar">
+        </div>
+        <div class="registro">
+        <input type="reset" value="Borrar" class="Borrar">
+        </div>
         
         
         
@@ -75,101 +132,45 @@
         
         
     </form>
-
- <img src="img-home-banner.jpg" alt="" height="80px">
-
-<p>Basado en ultima visita</p>
-
-<div class="articulos">
-    <img src="img-cafetera-moulinex.jpg" alt="" width="100%">
-    <i class="fas fa-truck"></i>
-    <p class="precios">670$</p>
-    <p class="ofertas">40% off</p>
-    <h3>Cafetera Moulinex</h3>
-</div>
+</main>
  
-<div class="articulos">
-    <img src="img-macbook-pro-2019.jpg" alt="" width="100%">
-    <i class="fas fa-truck"></i>
-    <p class="precios">2300$ </p>
-    <p class="ofertas">10% off</p>
-    <h3>Macbook Pro</h3>
- </div>
-
-
-<div class="articulos">
-<img src="img-samsung-galaxy-s10.jpg" alt="">
-    <i class="fas fa-truck"></i>
-    <p class="precios">500$</p>
-    <p class="ofertas">10% off</p>
-    <h3>Telefono movil Samsung Galaxy</h3>
-</div>
-
-
-<div class="articulos">
-    <img src="img-tv-samsung-smart.jpg" alt="">
-    <i class="fas fa-truck"></i>
-    <p class="precios">1250$</p>
-</div>
-
-<p class="ofertass"> Ofertas</p>
-
-
-<div class="articulos">
-    <img src="img-cafetera-moulinex.jpg" alt="" width="100%">
-    <i class="fas fa-truck"></i>
-    <p class="precios">670$</p>
-    <p class="ofertas">40% off</p>
-    <p>Cafetera Moulinex</p>
-</div>
-
-
-<div class="articulos">
-    <img src="img-macbook-pro-2019.jpg" alt="" width="100%">
-    <i class="fas fa-truck"></i>
-    <p class="precios">2300$ </p>
-    <p class="ofertas">10% off</p>
-    <p>Macbook Pro</p>
-</div>
- 
-<div class="articulos">
-    <img src="img-samsung-galaxy-s10.jpg" alt="">
-    <i class="fas fa-truck"></i>
-    <p class="precios">500$</p>
-    <p class="ofertas">10% off</p>
-    <p>Telefono movil Samsung Galaxy</p>
-</div>
 
 
 
 
 
 
+<footer>
 
 
-
-
-
-
-<div class="final">
-    <i class="fas fa-id-card"></i>
-    <p class="titulos-finales">Paga con tarjetas o en Efectivo</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ullam.</p>
-</div>
+    <article class="final">
+        <i class="fas fa-id-card"></i>
+        <p class="titulos-finales">Paga con tarjetas o en Efectivo</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ullam.</p>
+    </article>
+        
+    <article class="final">
+        <i class="fas fa-gift"></i>
+        <p class="titulos-finales">Envios finales desde 1.999$</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, quibusdam?</p>
+    </article>
+        
+    <article class="final">
+        <i class="fas fa-user-shield"></i>
+        <p class="titulos-finales">Seguridad de principio a fin</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ullam.</p>
+    </article>
     
-<div class="final">
-    <i class="fas fa-gift"></i>
-    <p class="titulos-finales">Envios finales desde 1.999$</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, quibusdam?</p>
-</div>
+    <div>
     
-<div class="final">
-    <i class="fas fa-user-shield"></i>
-    <p class="titulos-finales">Seguridad de principio a fin</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ullam.</p>
-</div>
-
-
+    <p class="copy">Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, cupiditate?</p>
+    
+    </div>
+    
+    
+    </footer>
+    
+    
 
 
 

@@ -1,3 +1,52 @@
+.dp-flex{
+    display: flex;
+   flex-direction: row;
+    
+}
+
+.otro-flex{display: flex;}
+
+.container-1{
+    width: 50%;
+}
+
+
+/*Dispositivo movil*/
+
+
+@media (max-width:661px){
+    main {
+    
+    display: flex;
+    flex-direction: column;
+    }
+    .dp-flex{
+        flex-direction: column;
+    }
+}
+
+.logo{
+    width: 50%;
+}
+
+.banner{
+    height: 10%;
+    width: 100%;
+}
+
+#search{
+    width: 50%;
+}
+
+
+
+.box{
+    display: flex;
+    
+}
+
+
+
 body{
     margin: 0%;
     padding: 2%;
@@ -7,6 +56,10 @@ body{
 
 img{
     width: 100%;
+    border-bottom: solid 1px gray;
+    
+    
+  
 }
 
 p{
@@ -16,20 +69,48 @@ p{
 
 header{
     background-color: #EAC926;
-    
+    box-sizing: content-box;
+    width: 100%;
     
 }
+
+.logo{
+    width: 50%;}
+
+.margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 24px;
+    text-align: center;
+}
+
 h3{
-  background-color: #ebebeb;;
-}
+  background-color: #ebebeb;}
+
+.articulos{
+    padding: 20px;
+    border-spacing: 5% 20px;}
+
+
 
 .articulos i{
     color: #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #39B54A;
+    padding: 5px;
+    position: relative;
+    margin-left: 90%;
+    
 }
+
 
 .ofertas{ 
     color: #39b54a;
     font-size: 16px;
+    padding-left: 15px;
+    padding-top: 2%;
 }
 
 ul{
@@ -39,24 +120,28 @@ ul{
 a{
     text-decoration: none;
     color: black;
+
+}
+a:hover{
+    cursor: hand;
 }
 
-.camion{
-   color: #39b54a;
-}
+
+
 
 .precios{
     font-size: 18px;
 }
 
-.ofertass{
-    font-size: 24px;
-}
+
 
 .final{
     background-color: white;
     text-align: center;
     color: gray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  
 }
 
 .final i{
@@ -77,4 +162,121 @@ form{
 
 form h3{
     background-color: white;
+}
+
+.copy {
+    text-align: center;
+    font-size: 10px;
+}
+
+#barra {
+    text-align: center;
+    
+}
+
+#barra ul{
+    display: none;
+    text-align: center;
+}
+
+#barra:hover ul{
+    display: block;
+    cursor: hand;
+
+}
+
+
+.hamburguesa { 
+    text-align: center;
+    background-color: #0044AA;
+    height: 40px;
+    width: 40px;
+   color: white;
+   font-size: 40px;
+   border-radius: 5px;
+    
+   padding:10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hamburguesa:hover{
+    background-color: #0022AA;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*registro*/
+
+.registro{
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width:  100%;
+    background-color: lightgray;
+
+}
+
+
+.registro input{
+    width: 70%;
+    border-radius: 5px;
+    border: 0px;
+    margin: auto ;
+    padding: 10px;
+}
+
+.registro .enviar{
+    color: white;
+    background-color: #0044aa;
+    width: 72%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;   
+}
+
+
+
+.enviar:hover{
+    background-color: #0022AA;
+}
+
+.registro .Borrar{
+    color: white;
+    background-color: #AA0044;
+    width: 72%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;   
+}
+
+.Borrar:hover{
+    background-color: #CC1155;
+}
+
+/*fin registro*/ 
+
+
+.descripcion-productos{
+    display: none;
+}
+
+.articulos:hover .descripcion-productos{
+    display: block;}
+
+.articulos:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.centro-texto{
+    text-align: center;
 }
